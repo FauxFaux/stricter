@@ -1,0 +1,15 @@
+[package]
+name = "stricter"
+version = "0.1.0"
+authors = ["Chris West (Faux) <git@goeswhere.com>"]
+edition = "2018"
+
+[dependencies]
+failure = "0.1"
+serde = "1"
+serde_derive = "1"
+toml = "0.5"
+ssh2 = "0.4"
+
+[dependencies.stricter-proto]
+path = "../stricter-proto"

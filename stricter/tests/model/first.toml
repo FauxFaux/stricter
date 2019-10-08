@@ -1,0 +1,11 @@
+[[action]]
+name = "whitelist"
+become = true
+[action.write]
+source = "hosts.deny"
+dest = "/etc/hosts.deny"
+
+[[action]]
+name = "blacklist"
+become = true
+write = { source = "hosts.allow", dest = "/etc/hosts.allow" }

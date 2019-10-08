@@ -1,0 +1,3 @@
+# note: this doesn't do what we actually want, if you're building from the workspace
+[build]
+target = "x86_64-unknown-linux-musl"

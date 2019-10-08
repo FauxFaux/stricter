@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "stricter-proto",
+    "stricter-worker",
+    "stricter",
+    "stricter-bin",
+]
+
+[profile.release]
+lto = true

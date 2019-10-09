@@ -6,6 +6,9 @@ edition = "2018"
 
 [dependencies]
 failure = "0.1"
+rustpython = "0.1"
+rustpython-compiler = "0.1"
+rustpython-vm = "0.1"
 serde = "1"
 serde_derive = "1"
 toml = "0.5"

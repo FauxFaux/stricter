@@ -5,6 +5,10 @@ authors = ["Chris West (Faux) <git@goeswhere.com>"]
 edition = "2018"
 
 [dependencies]
+failure = "0.1"
 
 [dependencies.stricter-proto]
 path = "../stricter-proto"
+
+[build-dependencies]
+vergen = "3"

@@ -47,11 +47,8 @@ impl DockerTransport {
 }
 
 impl Transport for DockerTransport {
-    fn write_all_from<R: Read>(&mut self, mut from: R) -> Result<(), Error>
-    where
-        Self: Sized,
-    {
-        io::copy(&mut from, self.child.stdin.as_mut().expect("requested"))?;
+    fn write_all_from(&mut self, mut from: &mut dyn Read) -> Result<(), Error> {
+        io::copy(from, self.child.stdin.as_mut().expect("requested"))?;
         Ok(())
     }
 
